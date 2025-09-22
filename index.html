@@ -36,7 +36,7 @@
 
     .text-section {
       flex: 1;
-      text-align: left;
+      text-align: center;
     }
 
     .text-section h1 {
@@ -60,6 +60,32 @@
       font-style: italic;
       font-size: 1.2rem;
       color: #ddd;
+    }
+
+    .coming-soon {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-style: italic;
+      color: #ffffff;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #0a0047;
+      background-color: #18c7a5;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #14a187;
     }
 
     footer {
@@ -86,9 +112,10 @@
       <h1><span class="highlight">ASHA</span>, your AI</h1>
       <h2>Health Advocate</h2>
       <p>Always there to assist the patient.</p>
-      <h2>Coming soon.</h2>
+      <div class="coming-soon">Coming Soon</div>
+      <a href="mailto:healthaidteam@gmail.com?subject=Join%20Waitlist" class="cta-button">Join Waitlist</a>
     </div>
-    <img src="ashanew.png" alt="ASHA - AI Health Advocate" />
+    <img src="asha.png" alt="ASHA - AI Health Advocate" />
   </header>
 
   <footer>
