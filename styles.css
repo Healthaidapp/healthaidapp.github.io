@@ -53,7 +53,14 @@ body::after{
 .nav{ display:flex; align-items:center; justify-content:flex-start; gap:16px; padding: 16px 0; }
 .logo{ display:block; }
 
-.hero{ padding: clamp(96px, 12vw, 200px) 0 clamp(72px, 8vw, 140px); }
+.hero{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .hero-inner{ text-align: center; }
 
 .display{
@@ -99,3 +106,10 @@ body::after{
 .cta:active{ transform: translateY(0) scale(.99); }
 
 .display-part { color: var(--muted); }
+
+.comingsoon {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e2e8f0;
+  margin: 12px 0 32px;
+}
