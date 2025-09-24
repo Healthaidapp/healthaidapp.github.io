@@ -1,10 +1,9 @@
 :root{
-  --bg0: #060b12;        /* deep navy */
-  --bg1: #07121d;        /* slightly lighter */
-  --glow: #18c7a5;       /* accent glow */
-  --text: #e6fbff;       /* off-white */
+  --bg0: #060b12;
+  --bg1: #07121d;
+  --glow: #18c7a5;
+  --text: #e6fbff;
   --muted: #9fb3c2;
-  --card: rgba(255,255,255,0.04);
   --border: rgba(255,255,255,0.08);
 }
 
@@ -18,7 +17,6 @@ body{
   overflow-x: hidden;
 }
 
-/* --- Background inspired by astera.org: layered radial/linear gradients, subtle grid, no animation --- */
 body::before, body::after {
   content: "";
   position: fixed; inset: -10vmax;
@@ -30,7 +28,6 @@ body::before, body::after {
     linear-gradient(180deg, var(--bg1), var(--bg0) 35%, #04070c);
   filter: saturate(1.05);
 }
-/* subtle grid overlay */
 body::after{
   z-index:-1;
   background-image: 
@@ -59,9 +56,20 @@ body::after{
 .display{
   margin: 0 0 18px 0;
   font-size: clamp(40px, 8.5vw, 96px);
-  line-height: 1.02;
+  line-height: 1.05;
   letter-spacing: -0.02em;
   text-shadow: 0 6px 40px rgba(24,199,165,0.15);
+}
+
+.display .line2{
+  display:block;
+  font-size: clamp(28px, 4.5vw, 48px);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.ai-highlight{
+  color: var(--glow);
 }
 
 .subhead{
