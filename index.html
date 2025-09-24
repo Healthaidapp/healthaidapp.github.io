@@ -1,125 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HealthAid - Empowering Patients with AI</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0a0047, #111c61, #1e0f47);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-
-    header {
-      max-width: 1000px;
-      padding: 2rem;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-    }
-
-    header img {
-      width: 350px;
-      max-width: 100%;
-      height: auto;
-    }
-
-    .text-section {
-      flex: 1;
-      text-align: center;
-    }
-
-    .text-section h1 {
-      font-size: 2.5rem;
-      line-height: 1.2;
-    }
-
-    .text-section h1 .highlight {
-      color: #18c7a5;
-      font-weight: bold;
-    }
-
-    .text-section h2 {
-      font-size: 2rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-weight: normal;
-    }
-
-    .text-section p {
-      font-style: italic;
-      font-size: 1.2rem;
-      color: #ddd;
-    }
-
-    .coming-soon {
-      margin-top: 2rem;
-      font-size: 1.5rem;
-      font-weight: bold;
-      font-style: italic;
-      color: #ffffff;
-    }
-
-    .cta-button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      font-weight: bold;
-      color: #0a0047;
-      background-color: #18c7a5;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #14a187;
-    }
-
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .text-section {
-        text-align: center;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Healthaid — The Further of Patient AI</title>
+  <meta name="description" content="Healthaid empowers patients with AI. Healthaid.app coming soon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="text-section">
-      <h1><span class="highlight">ASHA</span>, your AI</h1>
-      <h1>Health Advocate</h1>
-      <p>Always there to assist the patient.</p>
-      <div class="coming-soon">Coming Soon</div>
-      <a href="mailto:healthaidteam@gmail.com?subject=Join%20Waitlist" class="cta-button">Join Waitlist</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img src="assets/logo.svg" alt="Healthaid logo" width="140" height="28">
+      </a>
+      <nav class="links">
+        <a href="mailto:Healthaidteam@gmail.com?subject=Join%20Waitlist">Join Waitlist</a>
+      </nav>
     </div>
-    <img src="ashanew.png" alt="ASHA - AI Health Advocate" />
   </header>
 
-  <footer>
-    © 2025 HealthAid. Empowering patients with AI.
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="display">The Further of Patient AI</h1>
+        <p class="subhead">Healthaid.app coming soon</p>
+        <a class="cta" href="mailto:Healthaidteam@gmail.com?subject=Join%20Waitlist">Join Waitlist</a>
+        <p class="email-note">or email us directly at <a href="mailto:Healthaidteam@gmail.com">Healthaidteam@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <small>© 2025 Healthaid</small>
+      <small>Empowering patients with AI</small>
+    </div>
   </footer>
 </body>
 </html>
