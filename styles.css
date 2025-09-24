@@ -1,4 +1,6 @@
 :root{
+  --accent-start: #0de0c2;
+  --accent-end: #18c7a5;
   --bg0: #060b12;
   --bg1: #07121d;
   --glow: #18c7a5;
@@ -68,9 +70,7 @@ body::after{
   color: var(--text);
 }
 
-.ai-highlight{
-  color: var(--glow);
-}
+.ai-highlight{ color: var(--accent-end); }
 
 .subhead{
   font-size: clamp(18px, 2.4vw, 26px);
@@ -80,7 +80,7 @@ body::after{
 
 .cta{
   display:inline-block;
-  background: linear-gradient(135deg, #0de0c2, #18c7a5);
+  background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
   color: #052023;
   text-decoration: none;
   padding: 14px 22px;
